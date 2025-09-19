@@ -85,14 +85,14 @@ L'application est moderne avec des animations et un design soigné.
 
 ### 🛠️ Stack Technique
 
-| Composant     | Technologie              | Version    | Rôle                              |
-|---------------|--------------------------|------------|-----------------------------------|
-| **Frontend**  | HTML5, CSS3, JavaScript  | ES6+       | Interface utilisateur             |
-| **CSS**       | SCSS/Sass                | -          | Styles et animations              |
-| **Backend**   | PHP                      | 8.0+       | Logique serveur, API              |
-| **Base**      | MySQL                    | 8.0+       | Stockage des données              |
-| **Sécurité**  | PDO, CSRF Tokens         | -          | Protection contre injections SQL  |
-| **Serveur**   | Apache/Nginx             | -          | Hébergement web                   |
+| Composant     | Technologie              |
+|---------------|--------------------------|
+| **Frontend**  | HTML5, CSS3, JavaScript  |
+| **CSS**       | SCSS/Sass                |
+| **Backend**   | PHP                      |
+| **Base**      | MySQL                    |
+| **Sécurité**  | PDO, CSRF Tokens         |
+| **Serveur**   | Apache/Nginx             |
 
 ### 🎨 Design System
 - **Couleurs** : Palette orange/dégradé (sportif, dynamique)
@@ -179,91 +179,3 @@ L'application est moderne avec des animations et un design soigné.
 ---
 
 
-### 🚀 Fonctionnalités planifiées
-
-1. **Dashboard administrateur**
-   - Statistiques du club
-   - Graphiques des cotisations
-   - Recherche et filtres
-
-2. **Gestion avancée**
-   - Export CSV/PDF des adhérents
-   - Historique des modifications
-   - Notifications par email
-
-3. **Améliorations UI/UX**
-   - Mode sombre/clair
-   - Thème personnalisable
-   - Accessibilité WCAG
-
----
-
-## 9. Installation et Déploiement
-
-### 🖥️ Prérequis
-
-```bash
-# Serveur web
-Apache 2.4+ ou Nginx
-PHP 8.0+ avec extensions : PDO, MySQLi
-MySQL 8.0+ ou MariaDB 10.4+
-
-# Outils de développement (optionnel)
-Node.js 16+ (pour build TypeScript)
-Composer (gestion dépendances PHP)
-```
-
-### 🚀 Installation
-
-1. **Cloner le projet**
-```bash
-git clone https://github.com/votre-user/projet-club-sport.git
-cd projet-club-sport
-```
-
-2. **Configuration base de données**
-```sql
--- Créer la base
-CREATE DATABASE club_sport CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-
--- Importer le schéma
-mysql -u root -p club_sport < db.sql
-```
-
-3. **Configuration PHP**
-```php
-// config/connexion_db.php
-define('DB_HOST', 'localhost');
-define('DB_NAME', 'club_sport');
-define('DB_USER', 'root');
-define('DB_PASS', '');
-```
-
-4. **Lancer le serveur**
-```bash
-# Avec PHP built-in server
-php -S localhost:8000
-
-# Ou avec WAMP/XAMPP (dossier htdocs)
-```
-
-### 🔧 Structure des fichiers à créer
-
-```
-📁 À COMPLÉTER
-├── 📁 source/
-│   ├── 📁 controller/
-│   │   ├── LoginController.php     # Gestion connexion
-│   │   └── AdherentController.php  # CRUD adhérents
-│   ├── 📁 model/
-│   │   ├── Admin.php               # Modèle admin
-│   │   └── Adherent.php            # Modèle adhérent
-│   └── 📁 view/
-│       ├── dashboard.php           # Tableau de bord
-│       └── adherents/
-│           ├── list.php            # Liste adhérents
-│           ├── add.php             # Ajout adhérent
-│           └── edit.php            # Modification
-```
-
----
